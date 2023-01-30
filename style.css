@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background-color:rgb(222, 222, 222);
+    background: rgb(105,105,105);
+    background: linear-gradient(0deg, rgba(105,105,105,1) 0%, rgba(0,0,0,1) 100%);  
     display: flex;
     justify-content: center;
     align-content: center;
@@ -11,9 +12,9 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    border: 1px solid red;  
-    flex-basis: 80vw; 
+    flex-wrap: wrap; 
+    flex-basis: 88vw; 
+    flex-shrink: 1;
     padding: 0; 
 }
 
@@ -22,28 +23,90 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: row; 
-    /* width: 400px; */
     height: 100vh;
-    flex-basis: 400px;   
+    flex-basis: 500px; 
+    min-width: 480px;  
 }
 
 .text {
-    background-color: lightblue;  
-    display: flex;
-    flex-direction: column; 
-    
+    background-color: rgb(235, 235, 235);  
+    height: 300px;   
+    padding: 70px 60px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
 }
 
 .input-container {
-    background-color: lightgreen;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height:150px;
+    padding: 30px;
+}
+
+.input {
+    box-shadow: 5px 5px  5px rgba(0, 0, 0, 0.5);
+    position:relative;
+    
+
+}
+
+.container {  
+    margin: 30px;
+    width: 250px;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;;
+}
+
+.container-2 {
     display: flex;
     flex-direction: column;
 }
 
+div input {
+    margin-bottom: 15px; 
+    border-radius: 5px;;
+}
+
+div label {
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+button:hover {
+    background-color: rgb(67, 67, 67);
+    color: white;
+}
+
+button {
+    height: 40px;
+    width: 150px;
+    border-radius: 5px; 
+    font-size: 15px; 
+    font-weight: 600;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    position:relative;
+}
+
+.btn p {
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
 .btn {
-    background-color: lightpink;
-    /* display: flex;
-    flex-direction: column; */
+    background-color: rgb(235, 235, 235);  
+    padding: 60px;
 }
 
 .main-container {
@@ -51,15 +114,19 @@ body {
 }
 
 .info {
+    display: flex;
+    flex-direction: column;
     min-width: 480px;
     flex-basis:60%;
     flex-shrink: 2;
+    height: 100vh;
+    
 }
 
 h1 {
     color: white;
     font-size: 50px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
 
@@ -75,7 +142,19 @@ h1 {
     justify-content: center;
     margin:auto;
     background-color:rgb(0,0,0, 0.4);
-    width: 400px;
+    width: 500px;
     margin-top: 200px; 
+}
+
+.msg {
+    padding-top: 30px;
+}
+
+h2 {
+    background-color: white;
+    margin: 0;
+    padding-left:60px;
+    padding-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
