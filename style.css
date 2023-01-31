@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    height: 100vh;
+    width: 100vw;
     background: rgb(105,105,105);
     background: linear-gradient(0deg, rgba(105,105,105,1) 0%, rgba(0,0,0,1) 100%);  
     display: flex;
@@ -51,11 +53,10 @@ input:focus{
 }
 
 input {
-    height:25px;
-    font-size: 17px;
-    border: 0.5px solid black;
+    height: 25px;
+    border: 0.5px solid black; 
     border-radius: 5px;
-    margin-bottom: 15px; 
+    margin-bottom: 20px; 
 }
 
 .input {
@@ -72,12 +73,14 @@ input {
 .container-1 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     
 }
 
 .container-2 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 div label {
