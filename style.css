@@ -6,8 +6,7 @@ body {
     background: linear-gradient(0deg, rgba(105,105,105,1) 0%, rgba(0,0,0,1) 100%);  
     display: flex;
     justify-content: center;
-    align-content: center;
-    
+    align-content: center;   
 }
 
 .outer-container {
@@ -18,6 +17,7 @@ body {
     flex-basis: 88vw; 
     flex-shrink: 1;
     padding: 0; 
+    margin: 0;
 }
 
 .odin-background {
@@ -32,12 +32,11 @@ body {
 
 .text {
     background-color: rgb(237, 236, 236);  
-    height: 300px;   
-    padding: 130px 60px 20px 60px;
+    height: 290px;   
+    padding: 120px 60px 20px 60px;
     font-size: 20px;
     font-weight: 500;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
 
 .input-container {
@@ -49,20 +48,23 @@ body {
 }
 
 input:focus{
-    background-color:rgb(195, 238, 255);
+    background-color:rgb(221, 241, 249);
 }
 
 input {
     height: 25px;
     border: 0.5px solid black; 
     border-radius: 5px;
-    margin-bottom: 20px; 
+    margin-bottom: 15px; 
 }
 
 .input {
     box-shadow: 5px 5px  5px rgba(0, 0, 0, 0.5);
-    position:relative;
-    
+    position:relative;   
+}
+
+input:invalid {
+    box-shadow: 0 0 2px 1px red;
 }
 
 .container {  
@@ -72,15 +74,12 @@ input {
 
 .container-1 {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
+    flex-direction: column;    
 }
 
 .container-2 {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: column;   
 }
 
 div label {
@@ -121,24 +120,21 @@ button {
 .info {
     display: flex;
     flex-direction: column;
-    min-width: 480px;
+    min-width: 500px;
     flex-basis:60%;
     flex-shrink: 2;
-    height: 100vh;
-    
+    height: 100vh;   
 }
 
 h1 {
     color: white;
     font-size: 40px;
-    font-family: 'Aboreto', cursive;
-    
+    font-family: 'Aboreto', cursive;   
 }
 
 .odin-img img {
     height: 100px;
-    width: 80px;  
-     
+    width: 80px;      
 }
 
 .odin-img {
@@ -146,8 +142,7 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     margin-left:30px;
-    width: 500px;
-    
+    width: 500px;    
 }
 
 .msg {
@@ -159,6 +154,7 @@ h2 {
     margin: 0;
     padding-left:60px;
     padding-top: 40px;
+    padding-bottom: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
